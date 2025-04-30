@@ -1,0 +1,105 @@
+Linux Commands!!!
+
+File Management
+
+1. ls - list all files in a dir
+1.1. ls -al - hidden files
+2. pwd - print Working Directory
+3. cd - Change Directory
+3.1. cd .. - go back one dir
+3.2. cd (blank space) - home
+4. touch <filename> - make file
+4.1. touch -d tomorrow <filename> - make file tommorrow
+
+File Editing
+
+5. echo - echos what you say after the command
+5.1. echo "<write>" >  <file> - the text in the quotes is what will be inserted into the  file you specify.
+6. nano <file> - edit a file
+7. vim <file> - nano for people who think they are better then everyone.
+8. cat <file>  - show contents of a file.
+
+File Manegment
+
+9. shred <file> - DESTROYYYYY!!!! 
+10. mkdir <name> - MaKes a DIRectory with the specified name
+11. cp <file> <file destination> - this copys a file to a specified destination
+12. mv <file> <file destination> - this moves a file to a specified destination
+13. rm <file> - remove file
+14. rmdir <directory> - remove directory
+15. rm -r <directory> - if the directory you are trying to remove is not empty use this
+16. ln -s <file> <linkname> - create a link/shortcut to a file
+17. clear - clears the terminal
+
+User Manegment
+
+18. whoami - tells you the users name
+19. sudo useradd <username> - create a new user
+20. sudo adduser <username> - remove a user
+21. su <username> - switch user
+22. exit - exit out of a user
+23. passwd - change passwd of current user
+24. sudo passwd - change passwd of current user without current passwd
+25. sudo passwd <username> - change passwd of any user without current passwd
+26. sudo apt update - update libarys
+27. sudo apt upgrade - run after #26 to update your system
+28. sudo apt install <lib> - install libary
+29. finger <username> - this needs to be installed using #28 before use. Finger lets you inspect a user
+
+Help
+
+30. man <command> - teaches you what a command does press q to exit
+31. whatis <command> - tells you what a command does simpler
+32. which <lib> - tells you which lib you are using, useful for vms
+33. whereis <lib> - tells you where all the iterations of lib are
+
+Internet
+
+34. wget <rawurl> - downloads a file from a url
+35. curl <url>  - shows the contents of a file from the internet
+36. curl <url> > <file> - overwrites selected file with the file from the internet
+
+File Manegement
+
+37. zip <name of zip file> <file you want to zip inside> - zips a file
+38. unzip <zip file> - I think this one explains itself.
+39. less <file> - instead of showing you all of the contents of a file it shows you one page at a time
+40. head <file> - only the start of a file
+41. tail <file> - only the end of a file
+41. cmp <file1> <file2> - checks if two files are different
+42. diff <file1> <file2> - shows you exactly what is different in two files
+43. sort - used like: cat <file> | sort it will show you every line in alfabetical order
+44. find <dir> -name "<name of a file>*" - it will show you all files called the specified name
+45. chmod <--- = none r-- = read only e.c.t. rwx = read, write, and execute> - change mode of file
+46. chown <username> <file> - moves file to different user
+
+Network
+
+47. ifconfig - tells you ip address and more. Install with sudo apt install net-tools
+48. ip address - same as #47
+49. ping <url> - tests if a website is up exit ith ^c
+50. ping -c <count> <url>  - limits amount of pings to send
+51. traceroute <url> - shows route to get to website and latency install with sudo apt install traceroute
+52. netstat -tulpn - network stats
+53. sudo ufw allow 80 - eg firewall control
+54. ufw status
+55. ufw enable
+
+System
+
+56. uname - OS name
+57. uname -a - more stuff
+58. neofetch - everything in network and System all in one pretty window! sudo apt install neofetch
+59. cal - calendar sudo apt install incal
+60. echo "<math problem>" | bc - calculator
+61. free - memory
+62. df -H - disk space
+63. ps -aux - prossees running
+64. htop - task manegar
+65. ps -aux | grep <procces>
+65.1. kill -9 <procces num> - kill command run after #65
+66. pkill -f <procces> - kill instantly
+67. history - last commands used
+68. sudo reboot - reboot
+69. sudo shutdown -h now
+
