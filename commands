@@ -101,5 +101,6 @@ System
 66. pkill -f <procces> - kill instantly
 67. history - last commands used
 68. sudo reboot - reboot
-69. sudo shutdown -h now
+69. sudo shutdown -h now - shutdown
+70. alias <shortcut_name>='<command>' - makes it so you can create a custom command
 
